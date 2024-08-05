@@ -41,7 +41,7 @@
     "predeploy" : "npm run build",
     "deploy" : "gh-pages -d build"
   },
-  "homepage": "./",
+  "homepage": "ptod82.github.io",
   "eslintConfig": {
     "extends": [
       "react-app",
