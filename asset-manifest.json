@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.66b0051c.css",
+    "main.js": "/static/js/main.09473897.js",
+    "static/media/indicators.png": "/static/media/indicators.b493858658cacf1c74c5.png",
+    "static/media/countries.jpg": "/static/media/countries.7977c555fd719065ed03.jpg",
+    "static/media/sdg-color.png": "/static/media/sdg-color.4071b9b9fa5dc0b1f265.png",
+    "static/media/logo-en.svg": "/static/media/logo-en.67db09e58d6d84f51787bcb5a5de82df.svg",
+    "index.html": "/index.html",
+    "main.66b0051c.css.map": "/static/css/main.66b0051c.css.map",
+    "main.09473897.js.map": "/static/js/main.09473897.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.66b0051c.css",
+    "static/js/main.09473897.js"
+  ]
+}
