@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+html,
+body,
+#root{
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.66;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  padding: 0;
+}
+
+header.header{
+  padding: 15px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.app {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #555;
+}
+
+.container{
+  position: relative;
+}
+
+.container:before{
+  height: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  content: '';
+  display: block;
+  background-color: #fff;
+  z-index: 9999;
+}
+
+.sdg-logo{
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+}
+
+aside{
+  width: 21vw; 
+  height: calc(100vh - 10px); 
+  max-width: 550px;
+  background-color: #f9f9f9; 
+  display: flex; 
+  position: sticky;
+  top: 10px;
+  flex-direction: column;
+  border-top: 1px solid #f1f1f1;
+  border-right: 1px solid #f1f1f1;
+  border-top-right-radius: 4px;
+}
+
+.sidebar-list {
+ margin-top: 0;
+ padding: 1.5vw 1vw 80px 1vw;
+}
+
+.sidebar-list > li {
+  list-style-type: none;
+  font-weight: 500;
+  color: #2260d0;
+  margin-bottom: 10px;
+}
+
+.sidebar-list li ul li {
+  font-weight: bold;
+  color: #555555;
+  padding: 5px 10px 5px 17px;
+  line-height: 18px;
+  font-size: 13px;
+  list-style-type: none;
+  position: relative;
+}
+
+.sidebar-list li a,
+.useful-links li {
+  text-decoration: none;
+  display: flex;
+  align-items: flex-start;
+}
+
+.sidebar-list li.active a {
+  color: #333333;
+}
+
+.sidebar-list li.active {
+  background-color: #dbe8f5;
+  border-radius: 4px;
+  position: relative;
+}
+
+.useful-links li {
+  font-size: 12px;
+  margin-bottom: 13px;
+  position: relative;
+  padding-left: 10px;
+}
+
+.useful-links li a::before{
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #999;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
+
+
+.sidebar-list li ul li {
+  font-weight: normal;
+}
+
+.sidebar-list li ul li img {
+  width: 13px;
+  height: 13px;
+  top: 8px;
+  position: absolute;
+  left: 0;
+}
+
+a {
+  color: #333;
+}
+
+.multi-range-slider .bar-left,
+.multi-range-slider .bar-right {
+  box-shadow: inset 0px 0px 2px grey !important;
+}
+
+.multi-range-slider .bar-inner {
+  background-color: rgb(51, 122, 183) !important;
+  border: solid 1px grey !important;
+  box-shadow: none !important
+}
+
+.multi-range-slider {
+  box-shadow: none !important;
+  border: none !important
+}
+
+.multi-range-slider .thumb::before {
+  width: 15px !important;
+  height: 15px !important;
+  margin: -5px -9px !important;
+  border: solid 1px grey !important;
+  box-shadow: none !important
+}
+
+.multi-range-slider .caption {
+  display: none !important;
+}
+
+.multi-range-slider .ruler {
+  color: #c6c1c1;
+}
+
+.single-item {
+  font-weight: normal;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 2650px) {
+  .single-item{
+    min-height: '20vh'
+  }
+}
+
+.item-title{
+  display: flex;
+  align-items: center; 
+  padding: 5px 0;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  margin-top: 5px;  
+}
+
+.single-item h2 {
+  font-weight: 600;
+  display: flex;
+  font-size: 19px;
+  align-items: center;
+  margin: 0;
+  position: relative;
+}
+
+/* .active-item h2:before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  background-color: #1976d2;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+
+}
+
+.active-item h2 {
+ 
+  color: #1976d2;
+ 
+
+}
+ */
+
+.category {
+  font-weight: 600;
+  padding: 5px 0;
+  font-size: 27px;
+  margin: 50px 0 10px 0px;
+  border-radius: 8px;
+  display: inline-block;
+  position: relative;
+  color: #2260d0;
+}
+
+.tabs-container, .metadata{
+  width: 69%;
+  border: 1px solid #ebebeb61;
+  border-radius: 6px;
+  background-color: #fafafa;
+}
+
+.metadata{
+  width: 25%;
+}
+
+.meta-title{
+  color: #1a73e8;
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+.meta-title + div{
+  margin-bottom: 20px;
+}
+
+.app-bar{
+  background: transparent;
+  border-bottom: '1px solid #ccc';
+  position: 'relative';
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+
+.app-bar .MuiTabs-root button{
+  min-height: 60px;
+}
+
+.app-bar{
+  border-bottom: 1px solid #dedddd;
+}
+
+.download-btn{
+  position: absolute;
+  right: 10px;
+  top: 6px;
+  color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-family: "Roboto",
+    "Helvetica",
+    "Arial",
+    sans-serif;
+}
+
+.download-area button{
+  margin: 5px; 
+  justify-content: flex-start;
+}
+
+.country-box{
+  display: flex;
+  align-items: center;
+}
+.country-box img{
+  border-radius: 5px;
+  height: 40px;
+  object-fit: cover;
+  display: inline-block;
+  max-width: 60px;
+  margin-right: 1vw;
+}
+
+#fixed-header{
+  display: flex;
+  background-color: #eef5fc;
+  z-index: 99;
+  padding: 1vw;
+  border-radius: 4px;
+  position: sticky;
+  top: 10px;
+}
+
+.country-label{
+  margin-bottom: 0px;
+  display: flex;
+  font-size: 19px;
+  font-weight: 500;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+
+.country-label:after {
+  display: block;
+  content: '';
+  position: absolute;
+  right: -2.5vw;
+  width: 1px;
+  height: 100%;
+  background-color: #ccc;
+}
+
+
+.back-link{
+  display: flex;
+  margin-top: 10px;
+}
+
+.useful-links-btn{
+  font-size: 11px;
+  display: flex;
+  z-index: 9;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px 15px 5px 20px;
+  border-radius: 12px;
+  position: fixed;
+  bottom: 20px;
+  left: 1vw;
+  cursor: pointer;
+  background-color: #d2d2d2;    
+  box-shadow: 0 1px 1px 0 rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15)
+}
+
+.max-chart-height{
+  max-height: 45vh;
+  height: 45vh;
+}
